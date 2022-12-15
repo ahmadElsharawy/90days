@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#EDE7E7"
+    android:paddingTop="40dp">
+
+ <TextView
+     android:id="@+id/textTitle"
+     android:layout_width="343dp"
+     android:layout_height="45dp"
+     android:gravity="center"
+     android:text="TextView"
+     android:textSize="35dp"
+     app:layout_constraintBottom_toTopOf="@+id/seek_bar"
+     app:layout_constraintEnd_toEndOf="parent"
+     app:layout_constraintStart_toStartOf="parent"
+     app:layout_constraintTop_toTopOf="parent" />
+
+ <me.tankery.lib.circularseekbar.CircularSeekBar
+     android:id="@+id/seek_bar"
+     android:layout_width="429dp"
+     android:layout_height="386dp"
+     android:layout_gravity="center_horizontal"
+
+
+     android:layout_marginTop="84dp"
+     android:overScrollMode="never"
+     app:cs_circle_stroke_width="20dp"
+     app:cs_circle_style="square"
+     app:cs_disable_pointer="true"
+     app:cs_lock_enabled="false"
+     app:cs_max="90"
+     app:cs_move_outside_circle="true"
+     app:cs_negative_enabled="true"
+     app:cs_progress="0"
+     app:layout_constraintEnd_toEndOf="parent"
+     app:layout_constraintHorizontal_bias="0.48"
+     app:layout_constraintStart_toStartOf="parent"
+     app:layout_constraintTop_toTopOf="parent"
+     tools:ignore="MissingConstraints" />
+
+ <TextView
+     android:id="@+id/textExpressions"
+     android:layout_width="252dp"
+     android:layout_height="213dp"
+     android:layout_marginTop="12dp"
+     android:gravity="center"
+     android:scrollbars="vertical"
+     android:text="  نقطة ومن أول السطر . \n أحمد الشعراوى "
+     android:textDirection="anyRtl"
+     android:textSize="25sp"
+     app:guidelineUseRtl="false"
+     app:layout_constraintEnd_toEndOf="parent"
+     app:layout_constraintStart_toStartOf="parent"
+     app:layout_constraintTop_toBottomOf="@+id/textValue" />
+
+ <TextView
+     android:id="@+id/textValue"
+     android:layout_width="100dp"
+     android:layout_height="54dp"
+     android:layout_marginTop="36dp"
+     android:gravity="center"
+     android:text="50"
+     android:textSize="25sp"
+     app:layout_constraintEnd_toEndOf="parent"
+     app:layout_constraintStart_toStartOf="parent"
+     app:layout_constraintTop_toTopOf="@+id/seek_bar" />
+
+ <View
+     android:layout_width="match_parent"
+     android:layout_height="5dp"
+     android:layout_marginTop="116dp"
+     android:background="@android:color/black"
+     app:layout_constraintBottom_toBottomOf="parent"
+     app:layout_constraintEnd_toEndOf="parent"
+     app:layout_constraintHorizontal_bias="0.0"
+     app:layout_constraintStart_toStartOf="parent"
+     app:layout_constraintTop_toBottomOf="@+id/seek_bar"
+     app:layout_constraintVertical_bias="0.0"
+     tools:ignore="MissingConstraints" />
+
+ <Button
+     android:id="@+id/deleteBtn"
+     android:layout_width="174dp"
+     android:layout_height="84dp"
+     android:layout_marginTop="4dp"
+     android:layout_marginEnd="12dp"
+     android:text="حذف"
+     android:textSize="48sp"
+     app:layout_constraintEnd_toEndOf="parent"
+     app:layout_constraintTop_toBottomOf="@+id/seek_bar" />
+
+ <Button
+     android:id="@+id/restBtn"
+     android:layout_width="173dp"
+     android:layout_height="83dp"
+     android:layout_marginTop="4dp"
+     android:text="تصفير"
+     android:textSize="42sp"
+     app:layout_constraintEnd_toStartOf="@+id/deleteBtn"
+     app:layout_constraintHorizontal_bias="0.13"
+     app:layout_constraintStart_toStartOf="parent"
+     app:layout_constraintTop_toBottomOf="@+id/seek_bar" />
+</androidx.constraintlayout.widget.ConstraintLayout>
