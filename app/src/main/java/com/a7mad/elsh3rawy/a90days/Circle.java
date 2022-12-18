@@ -2,7 +2,6 @@ package com.a7mad.elsh3rawy.a90days;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
-import java.time.temporal.ChronoUnit;
 import java.util.concurrent.TimeUnit;
 
 public class Circle {
@@ -11,7 +10,7 @@ public class Circle {
     String datecreated;
     int value;
 
-    public Circle( String title, String datecreated, String newDate) {
+    public Circle(String title, String datecreated, String newDate) {
 
         this.title = title;
         this.datecreated = datecreated;
@@ -29,7 +28,6 @@ public class Circle {
     public void setDatecreated(String datecreated) {
         this.datecreated = datecreated;
     }
-
 
 
     public String getTitle() {
